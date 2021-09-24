@@ -1,0 +1,41 @@
+POST http://localhost:8091/rest/books
+Content-Type: text/plain
+
+{
+  allBooks {
+    isn
+    title
+  }
+}
+
+###
+
+POST http://localhost:8091/rest/books
+Content-Type: text/plain
+
+{
+  book(id: "123") {
+    title
+    authors
+    publisher
+  }
+}
+
+
+###
+
+POST http://localhost:8091/rest/books
+Content-Type: text/plain
+
+{
+  allBooks {
+    title
+    authors
+  }
+  
+  book(id: "123") {
+    title
+    authors
+    publisher
+  }
+}
